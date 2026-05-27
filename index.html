@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="index.css">
+    <title>Portfolio Boris Martel</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,700&family=Mukta+Malar:wght@600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav>
+
+  <div class="nav-left">
+      <div class="logo">BM</div>
+
+      <!-- Rounded switch -->
+      <label class="switch">
+        <input type="checkbox" id="themeToggle">
+        <span class="slider round"></span>
+      </label>
+  </div>
+
+  <div class="nav-center">
+      <a href="#about">ÜBER MICH</a>
+      <a href="#skills">SKILLS</a>
+  </div>
+
+  <div class="nav-right">
+      <a href="mailto:borismartel0@gmail.com" class="contact">
+        KONTAKT →
+      </a>
+  </div>
+
+</nav>
+
+
+<!-- Main Section -->
+<section class="main">
+
+ <div class="main-text">
+    <p class="main-name">BORIS MARTEL</p>
+
+    <p class="main-description">
+      Hey, ich bin Boris.<br>
+      Willkommen auf meiner Portfolio-Website.<br>
+      Hier findest du einen Überblick über mich, meine Kenntnisse und die Technologien, mit denen ich arbeite.
+    </p>
+ </div>
+
+ <div class="photo">
+    <img src="icons/profile.jpeg" alt="Profilbild">
+ </div>
+
+</section>
+
+
+<!-- Skills Section -->
+<section class="skills">
+
+ <div class="skills-container" id="skills">
+
+    <div class="skills-titel">
+     <p>Technologien mit denen ich arbeite</p>
+    </div>
+
+    <div class="skills-row">
+
+     <div class="box1">
+      <p>HTML</p>
+      <img class="box" src="icons/html-5.png">
+     </div>
+
+     <div class="box2">
+      <p>CSS</p>
+      <img class="box" src="icons/css-3(1).png">
+     </div>
+
+     <div class="box4">
+      <p>Python</p>
+      <img class="box" src="icons/python(1).png">
+     </div>
+
+     <div class="box5">
+      <p>Java</p>
+      <img class="box" src="icons/java(2).png">
+     </div>
+
+    </div>
+
+ </div>
+
+</section>
+
+
+<!-- About Section -->
+<section class="references" id="about">
+
+  <div class="references-container">
+
+    <div class="references-titel">
+      <p>Über mich</p>
+    </div>
+
+    <div class="references-row">
+
+      <div class="ref-box1">
+        <p>
+          Ich bin 21 Jahre alt und komme aus Korbach.
+          <br><br>
+
+          Seit meiner Schulzeit interessiere ich mich für IT und moderne Technologien
+          und konnte Einblicke in verschiedene Bereiche der Informatik und Softwareentwicklung sammeln.
+          <br><br>
+
+          Besonders spannend finde ich Webentwicklung, technische Systeme und die
+          kontinuierliche Weiterentwicklung im IT-Bereich.
+          <br><br>
+
+          In meiner Freizeit reise ich gerne, entdecke neue Länder und bin immer
+          auf der Suche nach neuen Abenteuern, Action und besonderen Erfahrungen.
+        </p>
+      </div>
+
+      <div class="ref-image">
+        <img src="icons/travel.JPEG" alt="Travel Image">
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- Bottom Nav -->
+<nav class="bottom-nav">
+
+    <div class="logo2">BM</div>
+
+    <div class="nav-center">
+      <a href="#about">ÜBER MICH</a>
+      <a href="#skills">SKILLS</a>
+    </div>
+
+    <a href="mailto:borismartel0@gmail.com" class="contact-bottom">
+      KONTAKT →
+    </a>
+
+</nav>
+
+
+<script>
+
+  const toggle = document.getElementById("themeToggle");
+
+  toggle.addEventListener("change", () => {
+    document.body.classList.toggle("dark");
+  });
+
+</script>
+
+</body>
+</html>
