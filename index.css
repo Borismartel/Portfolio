@@ -33,6 +33,8 @@ nav {
   background-color: var(--background-color);
   font-size: var(--font-nav-size);
   font-family: var(--font-main);
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 /* Nav left */
@@ -169,6 +171,7 @@ nav {
 
 .box1,
 .box2,
+.box3,
 .box4,
 .box5 {
   height: 100px;
@@ -183,6 +186,7 @@ nav {
 
 .box1:hover,
 .box2:hover,
+.box3:hover,
 .box4:hover,
 .box5:hover {
   transform: translateY(-5px);
@@ -190,6 +194,7 @@ nav {
 
 .box1 p,
 .box2 p,
+.box3 p,
 .box4 p,
 .box5 p {
   color: var(--text-color);
@@ -272,6 +277,8 @@ nav {
   background-color: var(--background-color);
   font-size: var(--font-nav-size);
   font-family: var(--font-main);
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .logo2 {
@@ -352,15 +359,27 @@ input:checked + .slider:before {
 
   nav,
   .bottom-nav {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
     height: auto;
-    gap: 15px;
-    padding: 15px 0;
   }
 
   .nav-center {
-    gap: 20px;
-    font-size: 14px;
+    gap: 15px;
+  }
+
+  .nav-center a {
+    font-size: 12px;
+  }
+
+  .contact,
+  .contact-bottom {
+    width: 110px;
+    height: 40px;
+    font-size: 12px;
   }
 
   .main {
@@ -394,6 +413,7 @@ input:checked + .slider:before {
 
   .box1,
   .box2,
+  .box3,
   .box4,
   .box5 {
     width: 90%;
